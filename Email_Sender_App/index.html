@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email_Sender_App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">Welcome to Our <span>Creative</span> Hub!</h1>
+                <p class="paragraph">Your gateway to a worldof creative posiblities being here.</p>
+            </div>
+        </div>
+
+
+        <div class="form-section">
+            <h2>hi, Friend!</h2>
+            <p>Welcome to our Email Sender Form!</p>
+            <form>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" name="to" id="to" required autocomplete="off" placeholder="Example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" required autocomplete="off"
+                        placeholder="Collabaration-Request">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required spellcheck="false" autocomplete="off"
+                        placeholder="Your text..."></textarea>
+                </div>
+
+
+
+                <div class="form-group result-container">
+                    <p class="result">Email sent successfully.</p>
+                    <button type="button" class="send-btn">Send Email</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
